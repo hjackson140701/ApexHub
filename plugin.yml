@@ -1,0 +1,9 @@
+name: ApexHub
+main: eu.apexmc.hub.main.Main
+version: 1.0
+authors: [HeriPutr, 4p3x]
+website: apexmc.eu
+commands:
+    apex:
+        description: ApexHub base command.
+        usage: /<command>
