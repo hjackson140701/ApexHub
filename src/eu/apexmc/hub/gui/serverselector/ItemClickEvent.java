@@ -34,20 +34,6 @@ public class ItemClickEvent implements Listener
 			}
 		}
 	@EventHandler
-	public void Survival(InventoryClickEvent event)
-	{
-		Player player = (Player) event.getWhoClicked();
-		ItemStack clicked = event.getCurrentItem();
-		World world = event.getWhoClicked().getWorld();
-		Location survivalPortal = new Location(world, 19, 31, 0);
-		if(clicked.getType() == Material.GRASS && clicked.getItemMeta().getDisplayName().contains(ChatColor.DARK_RED + "» Survival «" + ChatColor.GRAY + ChatColor.ITALIC + " (whitelisted)"))
-		{
-			event.setCancelled(true);
-			player.closeInventory();
-			player.teleport(survivalPortal);
-			}
-		}
-	@EventHandler
 	public void Practice(InventoryClickEvent event)
 	{
 		Player player = (Player) event.getWhoClicked();

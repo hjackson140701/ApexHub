@@ -14,11 +14,8 @@ public class CommandEvent implements Listener
 		Bukkit.getServer().getPluginManager().registerEvents(this, plugin);
 	}
 	@EventHandler
-	public void ApexHubCommandEvent(PlayerCommandPreprocessEvent event)
+	public void ApexHubChatEvent(PlayerCommandPreprocessEvent event)
 	{
-		if(!event.getPlayer().hasPermission("apexhub.events.command.allow"))
-		{
-			event.setCancelled(true);
+		event.setCancelled(true);
 		}
 	}
-}

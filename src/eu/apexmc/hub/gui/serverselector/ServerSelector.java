@@ -28,13 +28,7 @@ public class ServerSelector implements Listener
 		PracticeMeta.setDisplayName(ChatColor.DARK_RED + "» PvP Practice «");
 		Practice.setItemMeta(PracticeMeta);
 		
-		ItemStack Survival = new ItemStack(Material.GRASS);
-		ItemMeta SurvivalMeta = Survival.getItemMeta();
-		SurvivalMeta.setDisplayName(ChatColor.DARK_RED + "» Survival «" + ChatColor.GRAY + ChatColor.ITALIC + " (whitelisted)");
-		Survival.setItemMeta(SurvivalMeta);
-		
 		ServerSelector.setItem(11, Prison);
-		ServerSelector.setItem(13, Survival);
 		ServerSelector.setItem(15, Practice);
 	}
 }
